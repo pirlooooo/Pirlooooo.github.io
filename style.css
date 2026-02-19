@@ -1,11 +1,9 @@
-/* Reset Dasar */
 *::after,
 *::before, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 html {
   font-family: monsterat, sans-serif;
@@ -18,13 +16,11 @@ body {
   padding: 0;
   background-color: #0F1111;
   color: #B8B8B8;
-  /* Mengizinkan scroll normal pada body */
   overflow-x: hidden;
   overflow-y: auto; 
   width: 100%;
 }
 
-/* Container Utama */
 .main-container {
   width: 100%;
   height: auto;
@@ -32,30 +28,28 @@ body {
   flex-direction: column;
 }
 
-/* Styling Tiap Section (Halaman) */
 .page-section {
   min-height: 100vh; 
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Menengahkan vertikal */
-  align-items: center;     /* Menengahkan horizontal */
+  justify-content: center;
+  align-items: center;
   position: relative;
   border-top: 2px solid #333;
-  padding: 80px 20px;      /* Padding ditambah agar tidak menempel */
+  padding: 80px 20px;
 }
-/* Konten di tengah */
+
 .content-wrapper {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  /* Baris animation sudah dihapus */
-  opacity: 1; /* Pastikan selalu terlihat */
-  transform: none; /* Pastikan posisi normal */
+  opacity: 1;
+  transform: none;
 }
-/* Foto Profil */
+
 #img-1 {
   width: 8em;
   height: 8em;
@@ -65,33 +59,27 @@ body {
   object-fit: cover;
 }
 
-/* Judul Utama */
 .main-title {
   font-size: 3em;
   font-weight: bold;
   color: #fff;
   margin-top: 15px;
-
 }
 
-/* Judul Section */
 .section-title {
   font-size: 2.5em;
   font-weight: bold;
   color: #ffffff;
-
   margin-bottom: 20px;
 }
 
-/* Konten Teks */
 .pisi {
   font-size: 1.2rem;
   color: #a0a0a0;
-  max-width: 600px; /* Membatasi lebar teks agar enak dibaca */
+  max-width: 600px;
   line-height: 1.6;
 }
 
-/* Container Media Sosial */
 .container-media {
   display: flex;
   gap: 20px;
@@ -107,20 +95,17 @@ body {
   transform: scale(1.1);
 }
 
-/* Footer Copyright */
 .footer-text {
   margin-top: 30px;
   opacity: 0.5;
   font-size: 0.9rem;
 }
 
-/* Animasi Fade In */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Scrollbar Custom (Opsional: agar scrollbar terlihat elegan) */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -129,9 +114,6 @@ body {
   border-radius: 5px;
 }
 
-/* --- STYLE KHUSUS GALERI VIDEO (MASONRY LAYOUT) --- */
-
-/* 1. Wrapper Galeri */
 .gallery-wrapper {
   width: 90%;
   max-width: 1200px;
@@ -139,23 +121,16 @@ body {
   padding-bottom: 50px;
 }
 
-/* 2. Container Video (Menggunakan Column-Count) */
 .video-grid {
-  /* Mengubah dari Grid menjadi Columns untuk efek Masonry */
-  column-count: 2; /* Jumlah kolom, bisa diubah jadi 3 untuk layar besar */
-  column-gap: 20px; /* Jarak antar kolom */
+  column-count: 2;
+  column-gap: 20px;
   width: 100%;
   margin-top: 20px;
 }
 
-/* 3. Style Kartu Video */
 .video-card {
-  /* PENTING: Agar kartu tidak terpotong di tengah-tengah kolom */
   break-inside: avoid; 
-  
-  /* Memberi jarak ke bawah untuk kartu berikutnya dalam kolom yang sama */
   margin-bottom: 20px;
-
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   overflow: hidden;
@@ -170,10 +145,9 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* 4. Player Video & Judul (Tetap Sama) */
 .video-card video {
   width: 100%;
-  height: auto; /* Tinggi menyesuaikan rasio asli */
+  height: auto;
   aspect-ratio: auto;
   display: block;
 }
@@ -187,14 +161,12 @@ body {
   text-align: left;
 }
 
-/* Responsif untuk Layar Kecil (HP) */
 @media (max-width: 600px) {
   .video-grid {
-    column-count: 1; /* Jadi 1 kolom di HP */
+    column-count: 1;
   }
 }
 
-/* Styling untuk Bio */
 .profile-bio {
   font-size: 1.1rem;
   color: #a0a0a0;
@@ -203,7 +175,6 @@ body {
   line-height: 1.5;
 }
 
-/* Styling Container Software */
 .software-list {
   display: flex;
   flex-wrap: wrap;
@@ -212,7 +183,6 @@ body {
   margin-top: 15px;
 }
 
-/* Styling Label Software (Badges) */
 .software-list span {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
