@@ -92,6 +92,8 @@ body {
   line-height: 1.7;
   text-align: justify;
   letter-spacing: 0.5px;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .content-wrapper {
