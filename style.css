@@ -94,6 +94,14 @@ body {
   letter-spacing: 0.25px;
 }
 
+.singkat{
+  font-size: 0.8rem;
+  color: #B8B8B8;
+  line-height: 0.25;
+  text-align: left;
+  letter-spacing: 0.1px;
+}
+
 .content-wrapper {
   width: 100%;
 }
