@@ -30,7 +30,7 @@ body {
   gap: 40px;
 }
 
-.page-section {
+.page1 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
   align-items: flex-start;
 }
 
-.profile-hero-wrapper {
+.profile {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -46,12 +46,7 @@ body {
   width: 100%;
 }
 
-.profile-avatar-box {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.avatar-circle {
+.profile-avatar {
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 50%;
@@ -68,12 +63,12 @@ body {
   object-fit: cover;
 }
 
-.profile-info-box {
+.profile-name {
   grid-column: 2;
   grid-row: 1;
 }
 
-.main-title-underlined {
+.name {
   font-size: 2em;
   font-weight: 500;
   color: #8F8777; 
@@ -81,12 +76,12 @@ body {
   letter-spacing: 0.25px;
 }
 
-.profile-tab-tags {
+.profile-bio {
   grid-column: 1 / span 2;
   margin-top: 20px;
 }
 
-.profile-bio-text {
+.apalah-bio {
   font-size: 0.95rem;
   color: #B8B8B8;
   line-height: 1.7;
@@ -94,7 +89,7 @@ body {
   letter-spacing: 0.25px;
 }
 
-.singkat{
+.apalah{
   font-size: 0.8rem;
   color: #B8B8B8;
   line-height: 0.25;
